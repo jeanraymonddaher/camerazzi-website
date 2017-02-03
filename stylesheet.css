@@ -2,7 +2,7 @@ html, body{
 height: 100%;
 }
 body{
-background-color: green;
+background-color: black;
 margin: 0px;
 font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 font-size: 14px;
@@ -231,49 +231,52 @@ span.glyphicon-menu-down {
 #contents{
 background-color: red;
 font-size: 200%;
+height: 100%;
 }
 
-#left1{
-width: 50%;
-height:500px;
-background-color: yellow;
-float: left;
+.section{
+height: 100%;
 }
 
-
-#right1{
+.left{
 width: 50%;
-height:500px;
-background-color: green;
-float: left;
-}
-
-
-#left2{
-width: 50%;
-height:500px;
-background-color: purple;
-float: left;
-}
-#right2{
-width: 50%;
-height:500px;
-background-color: pink;
-float: left;
-}
-
-#left3{
-width: 50%;
-height:500px;
+height:100%;
 background-color: white;
 float: left;
+margin-bottom: 7%;
 }
 
-#right3{
+
+.right{
 width: 50%;
-height:500px;
-background-color: black;
+height:100%;
+background-color: white;
 float: left;
+margin-bottom: 7%;
+}
+
+
+.left h2{
+color: rgb(150,150,150);
+text-align: center;
+padding-top: 25%;
+padding-bottom: 5%;
+font-size: 140%;
+}
+
+.left p{
+color: black;
+font-size: 90%;
+text-align: center;
+vertical-align: middle;
+padding-left: 15%;
+padding-right: 15%;
+}
+
+.right img{
+width: 70%;
+height: 100%;
+padding-top: 20%;
 }
 
 #footer{
