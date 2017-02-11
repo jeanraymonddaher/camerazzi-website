@@ -39,34 +39,10 @@ width: 100%;
 z-index: 100;
 }
 
-#nav ul{
-padding: 0;
-margin: 0;
-list-style-type: none;
-text-align: left;
-}
-
-#nav li{
-display: inline;
-padding: 15px;
-vertical-align: middle;
-}
-
-#nav a{
-text-decoration: none;
-padding: 8px;
-color: white;
-vertical-align: middle;
-}
-
-#nav a:hover{
-
-}
-
 .burger{ 
      position: absolute;
      top: 30px;
-     left: 40px;    
+     left: 4.5%;    
      cursor: pointer;
 }
 
@@ -78,7 +54,7 @@ span.glyphicon-menu-hamburger{
 .cross{     
      position: absolute;
      top: 30px;
-     left: 40px;    
+     left: 4.5%;    
      cursor: pointer; 
 }
 
@@ -86,9 +62,10 @@ span.glyphicon-remove{
      font-size: 30px;
      color: white;
 }
-
-@media all and (max-width: 2500px){ 
+ 
       #nav ul{
+          margin:0; 
+          padding:0;
           background-color: rgb(50,50,50);
           position: fixed;
           top: 70px;
@@ -97,19 +74,24 @@ span.glyphicon-remove{
           margin-top: 20px;
           padding-top:10px;
           height: 90%;
-          width: 250px;
+          width: 18%;
           font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-          font-size: 90%;          
+          font-size: 90%;   
+          list-style-type: none;
+          text-align: left;       
    }
 
       #nav li{ 
           display: block;
-          padding: 15px 15px 15px 35px; 
+          padding: 8% 8% 8% 25%; 
+
                
    }
       #nav ul a{           
            text-align: left;
            box-sizing: border-box;
+           text-decoration: none;
+           color: white;
   }
       #nav li:hover{ 
            background-color: rgb(100,100,100);
@@ -117,19 +99,19 @@ span.glyphicon-remove{
   }
       #lanlabel{
            position: absolute;
-           top: 300px;
-           left:20px; 
+           top: 50%;
+           left: 8%; 
            color: white;  
           font-family: 'Open Sans', Helvetica, Arial, sans-serif;
           font-size: 80%;
-          padding-left: 25px;
+          padding-left: 15%;
   }
       #language{
            position: absolute;
-           top: 330px;
-           left: 20px;
-           width: 170px;
-           height: 30px;
+           top: 55%;
+           left: 8%;
+           width: 60%;
+           height: 5%;
            border: 1px black solid;
            border-radius: 4px;
           font-family: 'Open Sans', Helvetica, Arial, sans-serif;
@@ -137,8 +119,8 @@ span.glyphicon-remove{
           padding: 5px 15px;;
           background-color: rgb(50,50,50);
           color: white;
-          margin-left: 20px;      
-}
+          margin-left: 15%;      
+  }
 
 #main{
 background-color: black;
@@ -153,12 +135,12 @@ padding-top: 90px;
 position: relative;
 padding: 0;
 background-image: url("image.jpg");
-background-image: -webkit-linear-gradient(to bottom, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.5) 100%),url("image.jpg");
-background-image: -o-linear-gradient(to bottom, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.5) 100%),url("image.jpg");
-background-image: -moz-linear-gradient(to bottom, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.5) 100%),url("image.jpg");
-background-image: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.5) 100%),url("image.jpg");
+background-image: -webkit-linear-gradient(to bottom, rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.3) 100%),url("image.jpg");
+background-image: -o-linear-gradient(to bottom, rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.3) 100%),url("image.jpg");
+background-image: -moz-linear-gradient(to bottom, rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.3) 100%),url("image.jpg");
+background-image: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.3) 100%),url("image.jpg");
 background-repeat: no-repeat;
-background-size: 100% 100%;
+background-size: cover;
 margin: 0 auto;
 height: 100%;
 width: 100%;
@@ -229,32 +211,27 @@ span.glyphicon-menu-down {
     color: white;
 }
 #contents{
-background-color: red;
+background-color: white;
 font-size: 200%;
 height: 100%;
+
 }
 
 .section{
 height: 100%;
+background-color: white;
+margin: 0;
+
 }
 
-.left{
+.left, .right{
 width: 50%;
 height:100%;
 background-color: white;
 float: left;
 margin-bottom: 7%;
+
 }
-
-
-.right{
-width: 50%;
-height:100%;
-background-color: white;
-float: left;
-margin-bottom: 7%;
-}
-
 
 .left h2{
 color: rgb(150,150,150);
@@ -273,10 +250,12 @@ padding-left: 15%;
 padding-right: 15%;
 }
 
-.right img{
-width: 70%;
-height: 100%;
-padding-top: 20%;
+.right #mob1, .right #mob2,.right #mob3{
+background: url(iphone.png) center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+ height: 70%;
+margin-top: 7%;
 }
 
 #footer{
@@ -311,9 +290,89 @@ color: red;
 }
 
 
+@media all and (min-width: 700px) and (max-width: 1025px) {
 
+   #header p{
+    font-size: 250%;
+    right: 40%;
+    text-align: center;     
+   }
+   span.glyphicon-menu-hamburger{
+     font-size: 40px;
+     left: 20px;
+   }
+   #nav ul{
+     width: 40%;
+     font-size: 25px; 
+   }
+   #lanlabel{
+     font-size: 90%;
+   }
 
+    #bg h1{
+     font-size: 40px;
+     padding-top: 150px;
+   }
 
+.left, .right{
+width: 100%;
+margin-bottom: 0;
+}
+.left{
+height: 40%;
+}
 
+.right{
+margin-bottom: 10%;
+}
+.left h2{
+padding-top: 8%;
+padding-bottom: 1%;
+}
+.right img{
+margin-top: -10%;
+margin-bottom: 10%;
+}
+}
 
+@media all and (min-width: 250px) and (max-width: 699px) {
+   #header p{ 
+     font-size: 20px;
+     right: 20%;    
+   }
+    #bg h1{
+     font-size: 23px;
+   }
+   #nav ul{
+     width: 40%;
+     font-size: 15px; 
+   }
+   #lanlabel{
+     font-size: 90%;
+   }
+
+.left, .right{
+width: 100%;
+margin-bottom: 0;
+}
+.left{
+height: 40%;
+}
+
+.left h2{
+padding-bottom: 1%;
+font-size: 90%;
+}
+.left h2:nth-of-type(1){
+padding-top: 15%;
+}
+.left p{
+font-size: 80%;
+}
+.right img{
+margin-top: -10%;
+margin-bottom: 10%;
+}
+
+}
 
